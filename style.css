@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b1020;
+    padding: 20px;
+}
+
+.calculator {
+    width: 350px;
+    max-width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+    background: #151c30;
+    border: 1px solid #29334d;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h2 {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.header span {
+    color: #8d9bb8;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.display {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.display input {
+    width: 100%;
+    height: 85px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: #0b1120;
+    color: #ffffff;
+    text-align: right;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.display input::placeholder {
+    color: #8d9bb8;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    height: 58px;
+    border: none;
+    border-radius: 15px;
+    background: #222c43;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: #34415e;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.utility {
+    background: #303b55;
+    color: #aebce0;
+}
+
+.utility:hover {
+    background: #425170;
+}
+
+.operator {
+    background: #292650;
+    color: #b7a8ff;
+}
+
+.operator:hover {
+    background: #403777;
+}
+
+.equals {
+    background: #7962f5;
+    color: #ffffff;
+}
+
+.equals:hover {
+    background: #927fff;
+}
+
+.footer {
+    margin-top: 22px;
+    text-align: center;
+    color: #64718d;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        padding: 18px;
+    }
+
+    .keypad {
+        gap: 9px;
+    }
+
+    .btn {
+        height: 54px;
+    }
+
+    .display input {
+        height: 75px;
+        font-size: 28px;
+    }
+}
